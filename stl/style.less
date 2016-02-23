@@ -1,0 +1,270 @@
+/*Base*/
+body{
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	h3{
+		text-align: center;
+		margin-top: 75px;
+		font-weight: bold;
+	}
+	.line{
+		height: 2px;
+		width: 75px;
+		background-color: #000;
+		margin: 50px auto;
+	}
+}
+/*Layout*/
+header{
+	width: 100%;
+	height: 100vh;
+	background: url('../img/back1.jpg');
+	background-size: cover;
+	.logo{
+		img{
+			margin-top: 45px;
+		}
+	}
+	nav{
+		ul{
+			float: right;
+			margin-top: -30px;
+			li{
+				list-style: none;
+				display: inline-block;
+				margin: 5px;
+				a{
+					color: #fff;
+					&:hover{
+						color:#fff;
+						text-decoration: overline;
+						font-weight: bolder;
+					}
+				}
+			}
+		}
+	}
+	.banner {
+		position: absolute;
+		width: 450px;
+		height: 100px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+
+		.p1{
+			text-align: center;
+		}
+
+		.line{
+			height: 1px;
+			width: 75px;
+			background-color: #fff;
+			margin: 25px auto;
+		}
+
+	}
+	.pointer{
+		position: absolute;
+		bottom: 10vh;
+		left: 47%;
+	}
+}
+#our-services{
+	color: #000;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 15vh;
+	h2{
+		margin: 20px auto;
+	}
+	.second{
+		margin-bottom: 75px;
+	}
+}
+#with-mobile{
+	width: 100%;
+
+	background: url('../img/back2.jpg');
+	background-size: cover;
+	.items-description{
+		padding-top: 35px;
+		width: 55%;
+		margin-right: 10%;
+		margin-top: 5%;
+		float: left;
+		p{
+			margin-bottom: 20px;
+		}
+		a{
+			color: #fff;
+			text-decoration: none;
+			border: 1px solid transparent;
+			padding: 5px 10px;
+			&:hover{
+				border: 1px solid #fff;
+				padding: 5px 10px;
+			}
+		}
+	}
+	.items-image{
+		padding-top: 6%;
+		background: transparent;
+		float: right;
+		width: 30%;
+		img{
+			height: 300px;
+		}
+	}
+}
+@media (max-width: 975px){
+	.container{
+		width: 100%;
+	}	
+}
+#our-works{
+	color: #000;
+	width: 100%;
+	.ex1{
+		width: 31%;
+		height: 55vh;
+		float: left;
+		background: url('../img/layer17.jpg');
+		background-size: cover;
+	}
+	.ex2{
+		width: 31%;
+		height: 55vh;
+		float: left;
+		background: url('../img/layer16.jpg');
+		background-size: cover;
+		margin: 0 3%;
+	}
+	.ex3{
+		width: 31%;
+		height: 55vh;
+		float: left;
+		background: url('../img/layer21.jpg');
+		background-size: cover;
+	}
+	.hover{
+		display: none;
+		color: #000;
+		width: 100%;
+		height: 55vh;
+		background: url('../img/rectangle.png');
+		background-size: cover;
+		text-align: center;
+		padding-top: 35%;
+		.label{
+			font-size: 25px;
+			line-height: 30px;
+		}
+		
+	}
+	.examples .ex:hover{
+		opacity: 0.8;
+		.hover{
+			display: block;
+		}
+		&:after{
+			clear: both;
+		}
+	}
+	.button{
+		padding: 50px 0;
+		text-align: center;
+		.btnn{
+			border-radius: 0;
+			border: 2px #000 solid;
+			font-size: 15px;
+			padding: 1% 14%;
+			font-weight: bold;
+			background: #fff;
+			&:hover{
+				outline: none;
+				color: #fff;
+				border-color: #000;
+				background-color: #000;
+			}
+		}
+	}
+}
+footer{
+	width: 100%;
+	height: 100vh;
+	background: url('../img/back3.jpg');
+	background-size: cover;
+	.line{
+		background-color: #fff;
+	}
+	.social-btn{
+		text-align: center;
+		margin: 15px auto;
+		line-height: 30px;
+		a{
+			font-size: 17px;
+			color: #fff;
+			text-decoration: none;
+			margin-left: 45px;
+			width: 25px;
+			&:hover{
+				font-size: 23px;
+				margin-left: 45px;
+			}
+		}
+		
+	}
+	form{
+		text-align: center;
+		width: 50%;
+		margin: 30px auto;
+		.contact{
+			margin-bottom: 5%;
+			.name, .email{
+				width: 47%;
+				color: #fff;
+				border: none;
+				border-bottom: 1px solid #fff;
+				padding-bottom: 1%;
+				background: transparent;
+				font-style: italic;
+				margin-bottom: 45px;
+				&:focus{
+					outline: none;
+				}
+			}
+			.name{
+				margin-right: 5%; 
+			}
+		}
+		.message{
+				width: 100%;
+				color: #fff;
+				border: none;
+				border-bottom: 1px solid #fff;
+				padding-bottom: 1%;
+				background: transparent;
+				margin-bottom: 50px;
+				font-style: italic;
+				resize: none;
+				&:focus{
+					outline: none;
+				}
+			}
+		.btnn{
+			border: 2px solid #fff;
+			color: #fff;
+			background: transparent;
+			padding: 1% 3%;
+			&:hover{
+				border-color:#000;
+				color: #000;
+				background-color: #fff;
+				font-weight: bold;
+			}
+		}
+	}
+}
