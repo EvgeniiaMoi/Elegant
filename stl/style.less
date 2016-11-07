@@ -19,26 +19,37 @@ header{
 	width: 100%;
 	height: 100vh;
 	background: url('../img/back1.jpg');
-	background-size: cover;
-	.logo{
-		img{
-			margin-top: 45px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	.page-navigation{
+	position: fixed;
+	width: 100%;
+	background-color: #024969;
+    opacity: .8;
+		.logo{
+			margin-left: 30px;
+			img{
+				margin-top: 20px;
+			}
 		}
-	}
-	nav{
-		ul{
-			float: right;
-			margin-top: -30px;
-			li{
-				list-style: none;
-				display: inline-block;
-				margin: 5px;
-				a{
-					color: #fff;
-					&:hover{
-						color:#fff;
-						text-decoration: overline;
-						font-weight: bolder;
+		nav{
+			margin-right: 30px;
+			ul{
+				float: right;
+				margin-top: 15px;
+				li{
+					list-style: none;
+					display: inline-block;
+					margin: 5px;
+					a{
+						color: #fff;
+						&:hover{
+							color:#fff;
+							text-decoration: overline;
+							font-weight: bolder;
+						}
 					}
 				}
 			}
@@ -83,12 +94,39 @@ header{
 	.second{
 		margin-bottom: 75px;
 	}
+	.icons{
+		overflow: hidden;
+		.slick-slide:focus{
+			outline: none;
+		}
+		button{
+    		background-color: #024969;
+    		color: #fff;
+    		font-size: 20px;
+    		width: 40px;
+   			height: 40px;
+   			position: relative;
+   			top: 100px;
+   			z-index: 10;
+   			&:focus{
+   				outline: none;
+   			}
+		}
+		.next{
+		    top: -230px;
+		}
+		.prev{
+		    top: 100px;
+		}
+	}
 }
 #with-mobile{
 	width: 100%;
-
 	background: url('../img/back2.jpg');
-	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	.items-description{
 		padding-top: 35px;
 		width: 55%;
@@ -122,6 +160,14 @@ header{
 @media (max-width: 975px){
 	.container{
 		width: 100%;
+	}	
+}
+@media (max-width: 480px){
+	header .pointer {
+	    width: 5%;
+	}
+	section#our-services {
+	    display: none;
 	}	
 }
 #our-works{
@@ -158,6 +204,7 @@ header{
 		background-size: cover;
 		text-align: center;
 		padding-top: 35%;
+		cursor: pointer;
 		.label{
 			font-size: 25px;
 			line-height: 30px;
@@ -196,7 +243,10 @@ footer{
 	width: 100%;
 	height: 100vh;
 	background: url('../img/back3.jpg');
-	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	.line{
 		background-color: #fff;
 	}
@@ -210,6 +260,7 @@ footer{
 			text-decoration: none;
 			margin-left: 45px;
 			width: 25px;
+			transition: font-size 500ms;
 			&:hover{
 				font-size: 23px;
 				margin-left: 45px;

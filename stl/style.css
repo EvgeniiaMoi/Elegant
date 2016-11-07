@@ -19,24 +19,39 @@ header {
   width: 100%;
   height: 100vh;
   background: url('../img/back1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
-header .logo img {
-  margin-top: 45px;
+header .page-navigation {
+  position: fixed;
+  width: 100%;
+  background-color: #024969;
+  opacity: .8;
 }
-header nav ul {
+header .page-navigation .logo {
+  margin-left: 30px;
+}
+header .page-navigation .logo img {
+  margin-top: 20px;
+}
+header .page-navigation nav {
+  margin-right: 30px;
+}
+header .page-navigation nav ul {
   float: right;
-  margin-top: -30px;
+  margin-top: 15px;
 }
-header nav ul li {
+header .page-navigation nav ul li {
   list-style: none;
   display: inline-block;
   margin: 5px;
 }
-header nav ul li a {
+header .page-navigation nav ul li a {
   color: #fff;
 }
-header nav ul li a:hover {
+header .page-navigation nav ul li a:hover {
   color: #fff;
   text-decoration: overline;
   font-weight: bolder;
@@ -77,9 +92,37 @@ header .pointer {
 #our-services .second {
   margin-bottom: 75px;
 }
+#our-services .icons {
+  overflow: hidden;
+}
+#our-services .icons .slick-slide:focus {
+  outline: none;
+}
+#our-services .icons button {
+  background-color: #024969;
+  color: #fff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 100px;
+  z-index: 10;
+}
+#our-services .icons button:focus {
+  outline: none;
+}
+#our-services .icons .next {
+  top: -230px;
+}
+#our-services .icons .prev {
+  top: 100px;
+}
 #with-mobile {
   width: 100%;
   background: url('../img/back2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 #with-mobile .items-description {
@@ -114,6 +157,14 @@ header .pointer {
 @media (max-width: 975px) {
   .container {
     width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  header .pointer {
+    width: 5%;
+  }
+  section#our-services {
+    display: none;
   }
 }
 #our-works {
@@ -151,6 +202,7 @@ header .pointer {
   background-size: cover;
   text-align: center;
   padding-top: 35%;
+  cursor: pointer;
 }
 #our-works .hover .label {
   font-size: 25px;
@@ -187,6 +239,9 @@ footer {
   width: 100%;
   height: 100vh;
   background: url('../img/back3.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 footer .line {
@@ -203,6 +258,7 @@ footer .social-btn a {
   text-decoration: none;
   margin-left: 45px;
   width: 25px;
+  transition: font-size 500ms;
 }
 footer .social-btn a:hover {
   font-size: 23px;
